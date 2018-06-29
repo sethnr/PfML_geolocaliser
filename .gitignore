@@ -1,0 +1,11 @@
+data/
+cache/
+idx/
+bin/
+out/
+tmp_*/
+*~
+*ld.gz
+*ped
+gvcfs/
+*bam
