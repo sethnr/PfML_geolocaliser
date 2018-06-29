@@ -1,0 +1,16 @@
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf CSP.vcf
+	--keep countrySamples.txt
+	--012
+	--out CSP
+
+Keeping individuals in 'keep' list
+After filtering, kept 2512 out of 2640 Individuals
+Writing 012 matrix files ... 	012: Only outputting biallelic loci.
+Done.
+After filtering, kept 217 out of a possible 217 Sites
+Run Time = 1.00 seconds

@@ -1,0 +1,16 @@
+
+VCFtools - 0.1.14
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf GLURP.vcf
+	--keep countrySamples.txt
+	--012
+	--out GLURP
+
+Keeping individuals in 'keep' list
+After filtering, kept 2512 out of 2640 Individuals
+Writing 012 matrix files ... 	012: Only outputting biallelic loci.
+Done.
+After filtering, kept 391 out of a possible 391 Sites
+Run Time = 2.00 seconds

@@ -1,0 +1,13 @@
+for PROG in *Classifier*.py ; do echo $PROG; python $PROG -s ACS10.012 -t countries.txt -p30 2> /dev/null | grep -v 0.0 ; done
+vcftools --012 --vcf Daniels_SNPs.v4.vcf --out Daniels_SNPs.v4
+
+for G in MSP1 MSP2 CSP TRAP GLURP ; do
+  getPf3kVCFbyBED.sh -b ${G}.bed > ${G}.vcf ;
+  vcftools --012 --keep countrySamples.txt --vcf ${G}.vcf --out ${G};
+done
+
+for G in MSP1 MSP2 CSP TRAP GLURP Daniels_SNPs.v4; do
+ for PROG in *Classifier*.py ; do
+ echo $PROG    $G    `python $PROG -s ${G}.012 -t countries.txt -p10 -b 2> /dev/null`
+ done
+done
