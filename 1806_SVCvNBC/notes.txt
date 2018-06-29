@@ -1,0 +1,1 @@
+python Pf3k_sklearnSVMClassifier.py -s Daniels_SNPs.v4.012 -t countries.txt -p2 -b
